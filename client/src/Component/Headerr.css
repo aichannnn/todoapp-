@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+.container{
+display: flex;
+margin-left: 40%;
+margin-top: 40px;
+font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-weight: 400;
+}
+/*content css*/
+.dis{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 20%;
+  
+}
+.contain2{
+    margin-left: 30%;
+}
+.imgs{
+    margin-left: 20px;
+}
+.listt{
+    height: 30px;
+    width: 130px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #8888fa;
+    color: #000;
+    font-weight: 400;
+    font-size: 15px;
+}
+/*status css*/
+.container2{
+    display: flex;
+    width:800px;
+    margin-top: 70px;
+    margin-left: 20%;
+}
+.contain{
+    margin-left: 20%;
+    font-family:'Open Sans', sans-serif ;
+}
+.list{
+    margin-left: 40px;
+}
+input[type="checkbox"] {
+    border:2px solid grey; 
+    border-radius: 10px;
+    height: 25px;
+    width: 25px;
+
+}
+.lab{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #4b4b4b;
+}
+
+.list{
+    height: 30px;
+    width: 130px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #9191fc;
+    border: 1px solid #8888fa;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+/*Search css*/
+.container1{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.container1 h1{
+    text-align: center;
+    font-weight: 400;
+}
+.textbox{
+    height: 50px;
+    width:  570px;
+    margin-left: 25%;
+    border-radius: 5px;
+    border:2px solid lightgray;
+}
+::placeholder{
+    font-size: 20px;
+    color: #4b4b4b;
+    padding: 5px;
+}
+button{
+    margin-top: 5px;
+    height: 55px;
+    width: 55px;
+    border: 6px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
