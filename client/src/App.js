@@ -1,5 +1,6 @@
 import Content from "./Component/Content";
 import Headerr from "./Component/Headerr";
+import Home from "./Component/Home";
 import Search from "./Component/Search";
 import Status from "./Component/Status";
 
