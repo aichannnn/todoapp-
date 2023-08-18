@@ -17,6 +17,7 @@ export default function Status() {
           <label for="Completed">Completed</label>
           <input type="radio" id="onhold" name="pro" value="onhold"/>
           <label for="onhjold">ONHOLD</label>
+        
     </div>
     </div>
   )

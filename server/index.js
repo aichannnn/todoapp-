@@ -29,18 +29,29 @@ app.get('/todoss', async (req, res)=>{
     }catch(err){
         console.error(err)
     }
+})
 
-app.put('/todoss:id',async (req, res)=>{
+app.put('/todoss/:id',async (req, res)=>{
     try{
         const {id} = req.params;
         const {title} = req.body;
-
-        const updateTodo = await pool.query("UPDATE todoo SET title = $1 WHERE id=$2 RETURNING *",[title, id]);
+        const {progress} = req.body;
+        const updateTodo = await pool.query("UPDATE todoo SET title = $1, progress=$2 WHERE id=$3 RETURNING *",[title, progress,id]);
         res.json(updateTodo.rows[0]);
     }catch(err){
         console.log(err);
     }
-})    
-})
+})  
+app.delete('/todoss/:id', async (req, res) => {
+    const todoId = req.params.id;
+  
+    try {
+      const del = await pool.query('DELETE FROM todoo WHERE id = $1', [todoId]);
+      res.json(del.rows[0]);
+    } catch (error) {
+      console.error('Error deleting todo:', error);
+      res.status(500).json({ error: 'An error occurred while deleting the todo' },error);
+    }
+  });
 
 app.listen(PORT, ()=> console.log(`Server running on PORT ${PORT}`))

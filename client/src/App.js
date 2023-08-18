@@ -11,6 +11,7 @@ function App() {
      <Search></Search>
      <Status></Status>
      <Content></Content>
+     
     </>
   );
 }
